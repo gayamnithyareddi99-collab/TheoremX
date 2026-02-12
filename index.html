@@ -394,7 +394,207 @@ window.addEventListener("scroll", closeMenu);
     <a href="#contact">Contact</a>
   </div>
 </nav>
+<!-- ================= PREMIUM RESPONSIVE NAVBAR ================= -->
+<nav class="navbar" id="navbar">
 
+  <div class="logo">
+    <span>Theorem</span>X
+  </div>
+
+  <!-- Desktop Links -->
+  <div class="desktop-menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#founder">Founder</a>
+    <a href="#why">Why</a>
+    <a href="#ps">Solutions</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact" class="cta-btn">Contact</a>
+  </div>
+
+  <!-- Mobile Toggle -->
+  <div class="menu-toggle" onclick="toggleMenu()" id="toggleBtn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+</nav>
+
+<!-- ================= MOBILE FULLSCREEN MENU ================= -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="closeMenu()">Home</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#founder" onclick="closeMenu()">Founder</a>
+  <a href="#why" onclick="closeMenu()">Why</a>
+  <a href="#ps" onclick="closeMenu()">Solutions</a>
+  <a href="#faq" onclick="closeMenu()">FAQ</a>
+  <a href="#contact" onclick="closeMenu()" class="cta-link">Contact</a>
+</div>
+
+<style>
+:root{
+  --dark:#2c2c2c;
+  --white:#ffffff;
+  --accent:#f4a300;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:80px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 8%;
+  background:rgba(44,44,44,0.95);
+  backdrop-filter:blur(8px);
+  z-index:1000;
+}
+
+/* LOGO */
+.logo{
+  font-size:22px;
+  font-weight:900;
+  color:var(--white);
+}
+.logo span{
+  color:var(--accent);
+}
+
+/* DESKTOP MENU */
+.desktop-menu{
+  display:flex;
+  gap:35px;
+  align-items:center;
+}
+
+.desktop-menu a{
+  text-decoration:none;
+  color:var(--white);
+  font-weight:600;
+  position:relative;
+  transition:0.3s;
+}
+
+.desktop-menu a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:0%;
+  height:2px;
+  background:var(--accent);
+  transition:0.3s;
+}
+
+.desktop-menu a:hover{
+  color:var(--accent);
+}
+
+.desktop-menu a:hover::after{
+  width:100%;
+}
+
+/* Contact Button */
+.cta-btn{
+  background:var(--accent);
+  padding:10px 20px;
+  border-radius:30px;
+  color:var(--dark) !important;
+}
+
+/* ================= TOGGLE BUTTON ================= */
+.menu-toggle{
+  display:none;
+  flex-direction:column;
+  gap:6px;
+  cursor:pointer;
+}
+
+.menu-toggle span{
+  width:26px;
+  height:3px;
+  background:var(--white);
+  transition:0.4s;
+}
+
+/* Toggle Animation */
+.menu-toggle.active span:nth-child(1){
+  transform:rotate(45deg) translate(5px,5px);
+}
+.menu-toggle.active span:nth-child(2){
+  opacity:0;
+}
+.menu-toggle.active span:nth-child(3){
+  transform:rotate(-45deg) translate(6px,-6px);
+}
+
+/* ================= MOBILE MENU ================= */
+.mobile-menu{
+  position:fixed;
+  inset:0;
+  background:var(--dark);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+  transform:translateY(-100%);
+  transition:0.5s ease;
+  z-index:999;
+}
+
+.mobile-menu.show{
+  transform:translateY(0);
+}
+
+.mobile-menu a{
+  color:var(--white);
+  text-decoration:none;
+  font-size:26px;
+  font-weight:700;
+  transition:0.3s;
+}
+
+.mobile-menu a:hover{
+  color:var(--accent);
+}
+
+.cta-link{
+  background:var(--accent);
+  padding:14px 30px;
+  border-radius:40px;
+  color:var(--dark) !important;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+  .desktop-menu{
+    display:none;
+  }
+  .menu-toggle{
+    display:flex;
+  }
+}
+</style>
+
+<script>
+const mobileMenu = document.getElementById("mobileMenu");
+const toggleBtn = document.getElementById("toggleBtn");
+
+function toggleMenu(){
+  mobileMenu.classList.toggle("show");
+  toggleBtn.classList.toggle("active");
+}
+
+function closeMenu(){
+  mobileMenu.classList.remove("show");
+  toggleBtn.classList.remove("active");
+}
+</script>
 <!-- ================= ULTRA HOME SECTION ================= -->
 <section id="home" class="hero-ultimate">
 
