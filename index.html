@@ -1,0 +1,2323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TheoremX | Innovator Founder Visa</title>
+
+<style>
+:root{
+  --dark:#2c2c2c;
+  --light:#f5f5f5;
+  --white:#ffffff;
+  --accent:#f4a300;
+  --text:#333333;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Segoe UI",sans-serif;
+}
+
+body{
+  background:var(--light);
+  color:var(--text);
+}
+
+/* ================= NAVBAR ================= */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:70px;
+  background:var(--dark);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 8%;
+  z-index:1000;
+}
+
+.logo{
+  color:var(--accent);
+  font-weight:800;
+  font-size:20px;
+}
+
+.nav-links{
+  display:flex;
+  gap:30px;
+}
+
+.nav-links a{
+  color:var(--white);
+  text-decoration:none;
+  font-size:14px;
+}
+
+.menu-toggle{
+  display:none;
+  color:white;
+  font-size:28px;
+  cursor:pointer;
+}
+
+/* ================= HERO ================= */
+.hero{
+  margin-top:70px;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:120px 8%;
+  background:
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=1920&q=80");
+  background-size:cover;
+  background-position:center;
+  color:white;
+}
+
+.hero h1{
+  font-size:48px;
+  font-weight:900;
+}
+
+.hero h1 span{
+  color:var(--accent);
+}
+
+.hero p{
+  margin:30px auto;
+  max-width:800px;
+  line-height:1.7;
+  font-size:18px;
+}
+
+.hero-btn{
+  display:inline-block;
+  padding:16px 40px;
+  background:var(--accent);
+  color:black;
+  font-weight:700;
+  text-decoration:none;
+  border-radius:5px;
+  transition:0.3s ease;
+}
+
+.hero-btn:hover{
+  background:white;
+}
+
+/* Yellow Divider */
+.divider{
+  height:8px;
+  background:var(--accent);
+  width:100%;
+}
+
+/* ================= SECTION ================= */
+section{
+  padding:100px 8%;
+}
+
+.section-title{
+  text-align:center;
+  font-size:34px;
+  margin-bottom:20px;
+}
+
+.section-sub{
+  text-align:center;
+  max-width:800px;
+  margin:0 auto 60px;
+  color:#555;
+}
+
+/* Cards */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:var(--white);
+  padding:30px;
+  border-left:5px solid var(--accent);
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  transition:0.3s ease;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+/* Dark Section */
+.dark-section{
+  background:var(--dark);
+  color:white;
+}
+
+.dark-section .card{
+  background:#3b3b3b;
+  color:white;
+}
+
+/* CTA */
+.cta{
+  background:var(--accent);
+  text-align:center;
+  padding:80px 8%;
+}
+
+.cta h2{
+  font-size:30px;
+  margin-bottom:20px;
+}
+
+.cta button{
+  padding:16px 40px;
+  border:none;
+  background:black;
+  color:white;
+  font-weight:700;
+  cursor:pointer;
+}
+
+/* Footer */
+footer{
+  background:var(--dark);
+  color:white;
+  text-align:center;
+  padding:30px;
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:900px){
+
+  .nav-links{
+    position:absolute;
+    top:70px;
+    right:0;
+    background:var(--dark);
+    flex-direction:column;
+    width:100%;
+    text-align:center;
+    display:none;
+    padding:20px 0;
+  }
+
+  .nav-links.show{display:flex;}
+  .menu-toggle{display:block;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">TheoremX</div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <div class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#founder">Founder</a>
+    <a href="#why">Why TheoremX</a>
+    <a href="#p&s">Problems & Solutions</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- ================= ULTRA HOME SECTION ================= -->
+<section id="home" class="hero-ultimate">
+
+  <!-- Background -->
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+
+  <!-- Orange Diagonal Beam -->
+  <div class="hero-beam"></div>
+
+<div class="symbol s1">∑</div>
+<div class="symbol s2">π</div>
+<div class="symbol s3">Δ</div>
+<div class="symbol s4">∞</div>
+<div class="symbol s5">√</div>
+<div class="symbol s6">θ</div>
+<div class="symbol s7">λ</div>
+<div class="symbol s8">≈</div>
+<div class="symbol s9">≠</div>
+<div class="symbol s10">∫</div>
+<div class="symbol s11">α</div>
+<div class="symbol s12">β</div>
+<div class="symbol s13">γ</div>
+<div class="symbol s14">Ω</div>
+<div class="symbol s15">∂</div>
+<div class="symbol s16">⊕</div>
+<div class="symbol s17">⊂</div>
+<div class="symbol s18">⊗</div>
+<div class="symbol s19">∇</div>
+<div class="symbol s20">∴</div>
+
+  <div class="hero-container">
+
+    <span class="hero-tag">THEOREMX • IMMERSIVE PROOF LEARNING</span>
+
+    <h1>
+      Reinventing Mathematical Proof<br>
+      Through <span class="shine">Immersive Verified Intelligence</span>
+    </h1>
+
+    <div class="animated-line"><span></span></div>
+
+    <p>
+      TheoremX is building a VR-native academic engine that allows
+      students to physically construct mathematical proofs inside immersive space.
+      Every movement is translated into real-time symbolic verification,
+      transforming abstract reasoning into measurable academic mastery.
+    </p>
+
+    <div class="hero-buttons-new">
+
+  <a href="#contact" class="btn-demo">
+    <span>Request Demo</span>
+  </a>
+
+  <a href="#features" class="btn-features">
+    <span>Explore Features</span>
+  </a>
+
+</div>
+
+</section>
+
+<style>
+/* Base symbol style */
+.symbol{
+  position:absolute;
+  color:rgba(255,140,0,0.12);
+  font-weight:700;
+  animation:float 12s infinite ease-in-out;
+  pointer-events:none;
+}
+
+.symbol{
+  position:absolute;
+  color:rgba(255,140,0,0.10);
+  font-weight:700;
+  pointer-events:none;
+  animation:floatSmooth 10s ease-in-out infinite;
+}
+
+.symbol{
+  position:absolute;
+  font-weight:700;
+  pointer-events:none;
+  animation:floatPremium 12s ease-in-out infinite;
+}
+
+/* ===== DEPTH LAYER 1 (Far background) ===== */
+.s1,.s5,.s9,.s13,.s17{
+  color:rgba(255,140,0,0.07);
+  font-size:45px;
+}
+
+/* ===== DEPTH LAYER 2 (Mid layer) ===== */
+.s2,.s6,.s10,.s14,.s18{
+  color:rgba(255,140,0,0.10);
+  font-size:60px;
+}
+
+/* ===== DEPTH LAYER 3 (Near layer) ===== */
+.s3,.s7,.s11,.s15,.s19{
+  color:rgba(255,140,0,0.14);
+  font-size:75px;
+}
+
+/* ===== DEPTH LAYER 4 (Highlight layer) ===== */
+.s4,.s8,.s12,.s16,.s20{
+  color:rgba(255,140,0,0.18);
+  font-size:85px;
+}
+
+.symbol{
+  position:absolute;
+  font-weight:700;
+  pointer-events:none;
+  animation:floatPremium 12s ease-in-out infinite;
+}
+
+/* ===== DEPTH LAYER 1 (Far background) ===== */
+.s1,.s5,.s9,.s13,.s17{
+  color:rgba(255,140,0,0.07);
+  font-size:45px;
+}
+
+/* ===== DEPTH LAYER 2 (Mid layer) ===== */
+.s2,.s6,.s10,.s14,.s18{
+  color:rgba(255,140,0,0.10);
+  font-size:60px;
+}
+
+/* ===== DEPTH LAYER 3 (Near layer) ===== */
+.s3,.s7,.s11,.s15,.s19{
+  color:rgba(255,140,0,0.14);
+  font-size:75px;
+}
+
+/* ===== DEPTH LAYER 4 (Highlight layer) ===== */
+.s4,.s8,.s12,.s16,.s20{
+  color:rgba(255,140,0,0.18);
+  font-size:85px;
+}
+
+/* ===== POSITIONS ===== */
+.s1{top:10%; left:5%; animation-delay:0s;}
+.s2{top:20%; right:15%; animation-delay:1s;}
+.s3{top:30%; left:35%; animation-delay:2s;}
+.s4{top:40%; right:5%; animation-delay:3s;}
+.s5{top:50%; left:15%; animation-delay:4s;}
+.s6{top:60%; right:30%; animation-delay:5s;}
+.s7{top:70%; left:45%; animation-delay:6s;}
+.s8{top:80%; right:10%; animation-delay:7s;}
+.s9{top:25%; left:60%; animation-delay:8s;}
+.s10{top:35%; right:45%; animation-delay:9s;}
+.s11{top:55%; left:25%; animation-delay:10s;}
+.s12{top:65%; right:20%; animation-delay:11s;}
+.s13{top:75%; left:10%; animation-delay:12s;}
+.s14{top:15%; right:35%; animation-delay:13s;}
+.s15{top:45%; left:70%; animation-delay:14s;}
+.s16{top:85%; right:40%; animation-delay:15s;}
+.s17{top:12%; left:80%; animation-delay:16s;}
+.s18{top:58%; right:60%; animation-delay:17s;}
+.s19{top:68%; left:55%; animation-delay:18s;}
+.s20{top:38%; right:75%; animation-delay:19s;}
+
+/* ===== Smooth Vertical Motion ===== */
+@keyframes floatPremium{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-22px);}
+  100%{transform:translateY(0);}
+}
+
+/* ===== Smooth Vertical Motion ===== */
+@keyframes floatPremium{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-22px);}
+  100%{transform:translateY(0);}
+}
+
+/* Smooth Vertical Motion */
+@keyframes floatSmooth{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-18px);}
+  100%{transform:translateY(0);}
+}
+
+/* Floating animation */
+@keyframes float{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-35px);}
+  100%{transform:translateY(0);}
+}
+/* ================= SECTION ================= */
+
+.hero-ultimate{
+  position:relative;
+  min-height:100vh;
+  padding:170px 8%;
+  background:#0b0b0b;
+  color:white;
+  overflow:hidden;
+}
+
+/* Background image */
+.hero-bg{
+  position:absolute;
+  inset:0;
+  background:url('https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  opacity:0.18;
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to bottom, rgba(0,0,0,0.95), rgba(0,0,0,0.85));
+}
+
+/* Diagonal beam */
+.hero-beam{
+  position:absolute;
+  top:-200px;
+  right:-200px;
+  width:600px;
+  height:600px;
+  background:linear-gradient(45deg, transparent, rgba(255,140,0,0.25), transparent);
+  transform:rotate(45deg);
+  animation:beamMove 8s infinite ease-in-out;
+}
+
+@keyframes beamMove{
+  0%{transform:rotate(45deg) translateX(0);}
+  50%{transform:rotate(45deg) translateX(40px);}
+  100%{transform:rotate(45deg) translateX(0);}
+}
+
+/* Floating math symbols */
+.symbol{
+  position:absolute;
+  font-size:60px;
+  color:rgba(255,140,0,0.15);
+  animation:float 10s infinite ease-in-out;
+}
+
+.s1{ top:20%; left:10%; }
+.s2{ bottom:20%; right:15%; }
+.s3{ top:50%; right:5%; }
+
+@keyframes float{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-30px);}
+  100%{transform:translateY(0);}
+}
+
+/* Content */
+.hero-container{
+  position:relative;
+  z-index:3;
+  max-width:1100px;
+  margin:auto;
+  text-align:center;
+}
+
+.hero-tag{
+  font-size:12px;
+  letter-spacing:0.4em;
+  color:#ff8c00;
+}
+
+.hero-ultimate h1{
+  font-size:56px;
+  font-weight:900;
+  line-height:1.15;
+  margin:30px 0;
+}
+
+/* Gradient shine text */
+.shine{
+  background:linear-gradient(90deg, #ff8c00, #ffffff, #ff8c00);
+  background-size:200% auto;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:shineMove 4s linear infinite;
+}
+
+@keyframes shineMove{
+  from{background-position:200% center;}
+  to{background-position:-200% center;}
+}
+
+/* Animated underline */
+.animated-line{
+  width:200px;
+  height:3px;
+  background:#333;
+  margin:25px auto 40px;
+  overflow:hidden;
+  position:relative;
+}
+
+.animated-line span{
+  position:absolute;
+  width:60px;
+  height:100%;
+  background:#ff8c00;
+  animation:lineMove 3s infinite;
+}
+
+@keyframes lineMove{
+  from{left:-60px;}
+  to{left:200px;}
+}
+
+.hero-ultimate p{
+  font-size:18px;
+  line-height:1.7;
+  max-width:850px;
+  margin:0 auto 50px;
+  color:#e5e5e5;
+}
+
+/* ================= NEW BUTTON MODEL ================= */
+
+.hero-buttons-new{
+  margin-top:60px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+  flex-wrap:wrap;
+  position:relative;
+}
+
+/* REQUEST DEMO BUTTON */
+.btn-demo{
+  position:relative;
+  padding:20px 60px;
+  background:#ff8c00;
+  color:#000;
+  font-weight:800;
+  text-decoration:none;
+  letter-spacing:1px;
+  overflow:hidden;
+  transform:skewX(-10deg);
+  transition:0.4s ease;
+  box-shadow:0 15px 60px rgba(255,140,0,0.4);
+}
+
+.btn-demo span{
+  display:inline-block;
+  transform:skewX(10deg);
+}
+
+/* Glow Border Animation */
+.btn-demo::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border:2px solid rgba(255,255,255,0.4);
+  opacity:0;
+  transition:0.4s;
+}
+
+.btn-demo:hover{
+  transform:skewX(-10deg) translateY(-6px);
+  box-shadow:0 25px 80px rgba(255,140,0,0.6);
+}
+
+.btn-demo:hover::before{
+  opacity:1;
+}
+
+/* FEATURES BUTTON */
+.btn-features{
+  position:relative;
+  padding:20px 60px;
+  background:transparent;
+  color:#ff8c00;
+  border:2px solid #ff8c00;
+  font-weight:800;
+  text-decoration:none;
+  letter-spacing:1px;
+  overflow:hidden;
+  transform:skewX(-10deg);
+  transition:0.4s ease;
+}
+
+.btn-features span{
+  display:inline-block;
+  transform:skewX(10deg);
+}
+
+/* Animated Sweep */
+.btn-features::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background:rgba(255,140,0,0.2);
+  transition:0.5s;
+}
+
+.btn-features:hover::after{
+  left:100%;
+}
+
+.btn-features:hover{
+  transform:skewX(-10deg) translateY(-6px);
+  box-shadow:0 20px 60px rgba(255,140,0,0.3);
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .hero-buttons-new{
+    flex-direction:column;
+    gap:25px;
+  }
+
+  .btn-demo,
+  .btn-features{
+    width:100%;
+    text-align:center;
+  }
+}
+/* Mobile */
+@media(max-width:900px){
+  .hero-ultimate h1{font-size:34px;}
+  .hero-highlights{gap:40px;}
+}
+/* ================= ULTRA PRO PREMIUM ADDITIONS ================= */
+
+/* Outer glowing frame */
+.hero-ultimate::after{
+  content:"";
+  position:absolute;
+  inset:20px;
+  border:1px solid rgba(255,140,0,0.25);
+  box-shadow:0 0 60px rgba(255,140,0,0.15);
+  pointer-events:none;
+}
+
+/* Corner accents */
+.hero-ultimate::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(#ff8c00,#ff8c00) left top/60px 2px no-repeat,
+    linear-gradient(#ff8c00,#ff8c00) left top/2px 60px no-repeat,
+    linear-gradient(#ff8c00,#ff8c00) right bottom/60px 2px no-repeat,
+    linear-gradient(#ff8c00,#ff8c00) right bottom/2px 60px no-repeat;
+  opacity:0.6;
+  pointer-events:none;
+}
+
+/* Background aura pulse */
+.hero-overlay{
+  animation:pulseAura 6s infinite ease-in-out;
+}
+
+@keyframes pulseAura{
+  0%{opacity:0.85;}
+  50%{opacity:0.95;}
+  100%{opacity:0.85;}
+}
+
+/* Button light sweep */
+.btn-primary{
+  position:relative;
+  overflow:hidden;
+}
+
+.btn-primary::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background:linear-gradient(120deg,transparent,rgba(255,255,255,0.4),transparent);
+  transition:0.6s;
+}
+
+.btn-primary:hover::after{
+  left:100%;
+}
+
+/* Floating particles */
+.particle{
+  position:absolute;
+  width:4px;
+  height:4px;
+  background:#ff8c00;
+  border-radius:50%;
+  opacity:0.4;
+  animation:floatParticle 8s infinite linear;
+}
+
+@keyframes floatParticle{
+  from{transform:translateY(0);}
+  to{transform:translateY(-200px);}
+}
+
+/* Mouse glow effect */
+.mouse-glow{
+  position:absolute;
+  width:300px;
+  height:300px;
+  background:radial-gradient(circle, rgba(255,140,0,0.15), transparent 70%);
+  pointer-events:none;
+  transform:translate(-50%,-50%);
+  z-index:1;
+}
+
+/* Premium depth shadow */
+.hero-container{
+  text-shadow:0 10px 30px rgba(0,0,0,0.6);
+}
+</style>
+
+<script>
+
+/* Smooth fade */
+const hero = document.querySelector('.hero-container');
+hero.style.opacity = 0;
+hero.style.transform = "translateY(40px)";
+hero.style.transition = "1.2s ease";
+
+window.addEventListener("load",()=>{
+  hero.style.opacity = 1;
+  hero.style.transform = "translateY(0)";
+});
+/* Mouse Glow */
+const glow = document.createElement("div");
+glow.classList.add("mouse-glow");
+document.querySelector(".hero-ultimate").appendChild(glow);
+
+document.addEventListener("mousemove",(e)=>{
+  glow.style.left = e.clientX + "px";
+  glow.style.top = e.clientY + "px";
+});
+
+/* Floating Particles */
+for(let i=0;i<15;i++){
+  const p = document.createElement("div");
+  p.classList.add("particle");
+  p.style.left = Math.random()*100 + "%";
+  p.style.bottom = "0px";
+  p.style.animationDuration = (5+Math.random()*5)+"s";
+  document.querySelector(".hero-ultimate").appendChild(p);
+}
+</script>
+
+<div class="divider"></div>
+
+<!-- ===== COMPACT PREMIUM ABOUT COMPANY ===== -->
+<section id="about" class="about-compact">
+
+  <!-- Subtle Glow -->
+  <div class="about-glow"></div>
+
+  <!-- Micro Dot Texture -->
+  <div class="about-dots"></div>
+
+  <div class="about-container">
+
+    <span class="about-mini">ABOUT THEOREMX</span>
+
+    <h2>
+      Redefining Mathematical Learning Through<br>
+      <span>Immersive Proof Intelligence</span>
+    </h2>
+
+    <div class="about-line">
+      <span></span>
+    </div>
+
+    <div class="about-text">
+
+      <p class="dropcap">
+        TheoremX is a UK-based educational technology company
+        developing a virtual reality proof-construction engine
+        that transforms abstract mathematical reasoning into
+        structured spatial experience.
+      </p>
+
+      <p>
+        By integrating immersive interaction with real-time
+        symbolic verification, TheoremX enables students to
+        construct formal proofs inside a three-dimensional
+        environment while maintaining academic precision.
+      </p>
+
+      <p>
+        The platform addresses high dropout rates in proof-intensive
+        STEM modules, strengthens comprehension, and introduces
+        measurable performance improvement across institutions.
+      </p>
+
+    </div>
+
+    <!-- Compact Strategic Block -->
+    <div class="about-highlight">
+      <p>
+        Built for scalability and institutional integration,
+        TheoremX positions itself as long-term academic infrastructure —
+        not merely an educational tool.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+<div class="divider"></div>
+<style>
+
+/* ===== SECTION ===== */
+/* Yellow Divider */
+.divider{
+  height:8px;
+  background:var(--accent);
+  width:100%;
+}
+.about-compact{
+  position:relative;
+  background:#ffffff;
+  padding:120px 8%;
+  overflow:hidden;
+  color:#111;
+}
+
+/* Glow */
+.about-glow{
+  position:absolute;
+  width:600px;
+  height:600px;
+  background:radial-gradient(circle, rgba(255,140,0,0.08), transparent 70%);
+  top:-200px;
+  right:-200px;
+}
+
+/* Micro dots */
+.about-dots{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size:30px 30px;
+  opacity:0.4;
+}
+
+/* Container */
+.about-container{
+  position:relative;
+  max-width:950px;
+  margin:auto;
+  z-index:2;
+}
+
+/* Mini label */
+.about-mini{
+  font-size:11px;
+  letter-spacing:0.4em;
+  color:#ff8c00;
+}
+
+/* Title */
+.about-compact h2{
+  font-size:42px;
+  font-weight:900;
+  line-height:1.15;
+  margin:20px 0;
+}
+
+.about-compact h2 span{
+  color:#ff8c00;
+}
+
+/* Animated line */
+.about-line{
+  width:180px;
+  height:3px;
+  background:#eee;
+  margin:20px 0 40px;
+  position:relative;
+  overflow:hidden;
+}
+
+.about-line span{
+  position:absolute;
+  width:60px;
+  height:100%;
+  background:#ff8c00;
+  animation:lineTravel 3s infinite;
+}
+
+@keyframes lineTravel{
+  from{left:-60px;}
+  to{left:180px;}
+}
+
+/* Paragraphs */
+.about-text p{
+  font-size:18px;
+  line-height:1.75;
+  margin-bottom:24px;
+  color:#333;
+  transition:0.3s ease;
+}
+
+.about-text p:hover{
+  transform:translateX(6px);
+  color:#000;
+}
+
+/* Dropcap effect */
+.dropcap::first-letter{
+  font-size:55px;
+  font-weight:900;
+  float:left;
+  margin-right:12px;
+  line-height:1;
+  color:#ff8c00;
+}
+
+/* Highlight block */
+.about-highlight{
+  margin-top:30px;
+  padding:20px 30px;
+  border-left:4px solid #ff8c00;
+  background:#fafafa;
+  font-size:17px;
+  line-height:1.7;
+  color:#222;
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .about-compact{
+    padding:90px 20px;
+  }
+  .about-compact h2{
+    font-size:30px;
+  }
+}
+
+</style>
+
+<script>
+
+/* Soft Fade In */
+const aboutCompact = document.querySelector('.about-container');
+aboutCompact.style.opacity = 0;
+aboutCompact.style.transform = "translateY(30px)";
+aboutCompact.style.transition = "0.8s ease";
+
+window.addEventListener("scroll",()=>{
+  if(aboutCompact.getBoundingClientRect().top < window.innerHeight - 80){
+    aboutCompact.style.opacity = 1;
+    aboutCompact.style.transform = "translateY(0)";
+  }
+});
+
+</script>
+<!-- ================= FOUNDER SECTION ================= -->
+<section id="founder" class="founder-dark">
+
+  <!-- Soft Glow -->
+  <div class="founder-glow"></div>
+
+  <div class="founder-wrapper">
+
+    <span class="founder-label">FOUNDER & VISION</span>
+
+    <h2>
+      Leadership Driving<br>
+      <span>Immersive Academic Innovation</span>
+    </h2>
+
+    <div class="founder-divider">
+      <span></span>
+    </div>
+
+    <div class="founder-content">
+
+      <!-- Left Side -->
+      <div class="founder-text">
+
+        <h3>Daoud Intizar</h3>
+        <span class="founder-role">Founder & Chief Executive Officer · TheoremX</span>
+
+        <p>
+          Daoud Intizar founded TheoremX with a clear objective —
+          to modernise proof-based mathematics education through
+          immersive digital architecture. With a strong academic
+          background in mathematics and educational practice,
+          he identified a structural gap in how complex reasoning
+          is taught and retained across institutions.
+        </p>
+
+        <p>
+          Under his leadership, TheoremX has evolved into a
+          scalable educational infrastructure platform designed
+          to improve comprehension, reduce dropout rates, and
+          enhance institutional performance metrics within
+          UK higher education.
+        </p>
+
+      </div>
+
+      <!-- Right Side -->
+      <div class="founder-highlights">
+
+        <div class="highlight-block">
+          <h4>Academic Strength</h4>
+          <p>
+            Advanced mathematics background combined with
+            classroom teaching experience ensures the platform
+            is academically grounded and pedagogically sound.
+          </p>
+        </div>
+
+        <div class="highlight-block">
+          <h4>Innovation Leadership</h4>
+          <p>
+            Spearheading immersive proof-construction technology
+            that integrates symbolic logic verification with
+            virtual spatial interaction.
+          </p>
+        </div>
+
+        <div class="highlight-block">
+          <h4>Strategic Impact</h4>
+          <p>
+            Positioning TheoremX as a foundational EdTech
+            infrastructure solution aligned with UK university
+            performance improvement strategies.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Company Goodness Section -->
+    <div class="company-news">
+      <p>
+        Today, TheoremX stands as a forward-thinking academic
+        innovation company, bridging immersive computing with
+        formal mathematical verification — establishing a new
+        benchmark for interactive proof-based learning.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+<div class="divider"></div>
+<style>
+
+/* ===== SECTION ===== */
+/* Yellow Divider */
+.divider{
+  height:8px;
+  background:var(--accent);
+  width:100%;
+}
+.founder-dark{
+  position:relative;
+  background:#2c2c2c;
+  padding:160px 8%;
+  color:#ffffff;
+  overflow:hidden;
+}
+
+/* Glow */
+.founder-glow{
+  position:absolute;
+  width:500px;
+  height:500px;
+  background:radial-gradient(circle, rgba(255,140,0,0.2), transparent 70%);
+  top:-150px;
+  right:-150px;
+}
+
+/* Wrapper */
+.founder-wrapper{
+  max-width:1100px;
+  margin:auto;
+  position:relative;
+  z-index:2;
+}
+
+/* Label */
+.founder-label{
+  font-size:12px;
+  letter-spacing:0.4em;
+  color:#ff8c00;
+}
+
+/* Title */
+.founder-dark h2{
+  font-size:44px;
+  font-weight:900;
+  line-height:1.15;
+  margin:20px 0;
+}
+
+.founder-dark h2 span{
+  color:#ff8c00;
+}
+
+/* Divider */
+.founder-divider{
+  width:180px;
+  height:3px;
+  background:#444;
+  margin:20px 0 50px;
+  position:relative;
+  overflow:hidden;
+}
+
+.founder-divider span{
+  position:absolute;
+  width:60px;
+  height:100%;
+  background:#ff8c00;
+  animation:moveFounderLine 3s infinite;
+}
+
+@keyframes moveFounderLine{
+  from{left:-60px;}
+  to{left:180px;}
+}
+
+/* Content Layout */
+.founder-content{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:60px;
+}
+
+/* Founder Text */
+.founder-text h3{
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+.founder-role{
+  display:block;
+  font-size:13px;
+  letter-spacing:0.2em;
+  color:#ff8c00;
+  margin-bottom:20px;
+}
+
+.founder-text p{
+  font-size:17px;
+  line-height:1.7;
+  margin-bottom:20px;
+  color:#dddddd;
+}
+
+/* Highlight Blocks */
+.highlight-block{
+  margin-bottom:25px;
+  padding-left:20px;
+  border-left:3px solid #ff8c00;
+}
+
+.highlight-block h4{
+  font-size:18px;
+  margin-bottom:8px;
+  color:#ffffff;
+}
+
+.highlight-block p{
+  font-size:15px;
+  color:#cccccc;
+}
+
+/* Company News */
+.company-news{
+  margin-top:50px;
+  padding:20px 30px;
+  background:rgba(255,255,255,0.05);
+  border-left:4px solid #ff8c00;
+  font-size:16px;
+  line-height:1.7;
+  color:#f0f0f0;
+}
+/* ===== EXTRA PREMIUM DESIGN LAYERS ===== */
+
+/* Subtle grid texture */
+.founder-dark::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size:60px 60px;
+  opacity:0.5;
+  pointer-events:none;
+}
+
+/* Founder name glow pulse */
+.founder-text h3{
+  text-shadow:0 0 10px rgba(255,140,0,0.4);
+  animation:nameGlow 3s ease-in-out infinite;
+}
+
+@keyframes nameGlow{
+  0%{text-shadow:0 0 5px rgba(255,140,0,0.3);}
+  50%{text-shadow:0 0 20px rgba(255,140,0,0.7);}
+  100%{text-shadow:0 0 5px rgba(255,140,0,0.3);}
+}
+
+/* Highlight block hover upgrade */
+.highlight-block{
+  transition:0.4s ease;
+}
+
+.highlight-block:hover{
+  transform:translateX(8px);
+  background:rgba(255,255,255,0.05);
+  box-shadow:0 10px 40px rgba(0,0,0,0.4);
+}
+
+/* Corner accent lines */
+.founder-wrapper::before,
+.founder-wrapper::after{
+  content:"";
+  position:absolute;
+  width:80px;
+  height:2px;
+  background:#ff8c00;
+}
+
+.founder-wrapper::before{
+  top:-20px;
+  left:0;
+}
+
+.founder-wrapper::after{
+  bottom:-20px;
+  right:0;
+}
+
+/* Company news glow */
+.company-news{
+  position:relative;
+  overflow:hidden;
+}
+
+.company-news::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,140,0,0.05),
+    transparent
+  );
+  animation:newsSweep 6s infinite;
+}
+
+@keyframes newsSweep{
+  0%{transform:translateX(-100%);}
+  100%{transform:translateX(100%);}
+}
+/* Mobile */
+@media(max-width:900px){
+  .founder-dark{
+    padding:120px 20px;
+  }
+  .founder-content{
+    grid-template-columns:1fr;
+  }
+  .founder-dark h2{
+    font-size:30px;
+  }
+}
+
+
+</style>
+
+<script>
+
+/* Smooth Reveal */
+const founderSection = document.querySelector('.founder-wrapper');
+founderSection.style.opacity = 0;
+founderSection.style.transform = "translateY(40px)";
+founderSection.style.transition = "0.8s ease";
+
+window.addEventListener("scroll",()=>{
+  if(founderSection.getBoundingClientRect().top < window.innerHeight - 80){
+    founderSection.style.opacity = 1;
+    founderSection.style.transform = "translateY(0)";
+  }
+});
+
+</script>
+
+<!-- ===== WHY THEOREMX SECTION ===== -->
+<section id="why" class="why-company">
+
+  <div class="why-container">
+
+    <span class="why-mini">WHY THEOREMX</span>
+
+    <h2 class="why-title">
+      Redefining Mathematical Proof Learning<br>
+      <span>Through Immersive Intelligence</span>
+    </h2>
+<div class="why-divider">
+  <span></span>
+</div>
+    <p class="why-intro">
+      TheoremX was built to solve a deep structural problem in higher education — 
+      abstract mathematics is difficult not because it is impossible, but because 
+      traditional tools fail to bridge intuition and formal logic. 
+      We transform proof construction into an embodied, verified, and adaptive experience.
+    </p>
+
+    <!-- CORE DIFFERENTIATORS -->
+    <div class="why-grid">
+
+      <div class="why-item">
+        <h3>01 — Immersive Proof Construction</h3>
+        <p>
+          Students manipulate vectors, matrices, and geometric structures in 
+          a 3D virtual environment. Every interaction becomes a structured, 
+          formally verified proof step — not just a visual exploration.
+        </p>
+      </div>
+
+      <div class="why-item">
+        <h3>02 — Real-Time Symbolic Verification</h3>
+        <p>
+          Unlike traditional platforms, TheoremX integrates a computer algebra engine 
+          that checks each learner-generated step instantly, ensuring mathematical rigor 
+          rather than superficial correctness.
+        </p>
+      </div>
+
+      <div class="why-item">
+        <h3>03 — Adaptive AI Learning Intelligence</h3>
+        <p>
+          Our AI models analyse interaction sequences, detect confusion patterns, 
+          and dynamically adjust scaffolding — reducing cognitive overload and 
+          supporting diverse learning styles.
+        </p>
+      </div>
+
+      <div class="why-item">
+        <h3>04 — Institutional-Level Insight</h3>
+        <p>
+          Cohort analytics identify conceptual bottlenecks, enabling departments 
+          to reduce tutor workload, improve retention, and enhance curriculum 
+          design using real behavioural data.
+        </p>
+      </div>
+<div class="why-item">
+  <h3>05 — Cloud-Native Scalability</h3>
+  <p>
+    TheoremX operates on a secure cloud-native infrastructure,
+    enabling multi-campus deployment, centralised management,
+    and seamless updates without operational disruption.
+  </p>
+</div>
+
+<div class="why-item">
+  <h3>06 — Commercially Sustainable Model</h3>
+  <p>
+    Built with long-term institutional viability in mind,
+    TheoremX combines academic integrity with scalable
+    subscription architecture aligned with university budgets.
+  </p>
+</div>
+    </div>
+
+    <!-- STRATEGIC IMPACT -->
+    <div class="why-impact">
+
+      <div class="impact-line"></div>
+
+      <p>
+        In UK higher education, proof-intensive modules face high dropout rates 
+        and lecturer shortages. TheoremX addresses this with a scalable, cloud-native 
+        architecture designed for multi-institution deployment — supporting both 
+        academic quality and commercial sustainability.
+      </p>
+
+      <div class="impact-line"></div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+:root{
+  --dark:#2c2c2c;
+  --white:#ffffff;
+  --accent:#f4a300;
+  --light:#f5f5f5;
+}
+/* ===== WHY DIVIDER ===== */
+
+.why-divider{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  margin:35px 0 60px;
+}
+
+.why-divider span{
+  width:140px;
+  height:4px;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    #f4a300,
+    #2c2c2c,
+    #f4a300,
+    transparent
+  );
+  border-radius:4px;
+}
+/* SECTION */
+.why-company{
+  background:var(--white);
+  padding:160px 8%;
+  text-align:center;
+}
+
+/* CONTAINER */
+.why-container{
+  max-width:1100px;
+  margin:auto;
+}
+
+/* MINI */
+.why-mini{
+  font-size:12px;
+  letter-spacing:0.4em;
+  font-weight:700;
+  color:var(--accent);
+}
+
+/* TITLE */
+.why-title{
+  font-size:48px;
+  font-weight:900;
+  margin:20px 0 30px;
+  color:var(--dark);
+  line-height:1.2;
+}
+
+.why-title span{
+  color:var(--accent);
+  font-size:36px;
+}
+
+/* INTRO */
+.why-intro{
+  font-size:18px;
+  color:var(--dark);
+  max-width:850px;
+  margin:0 auto 80px;
+  line-height:1.8;
+}
+
+/* GRID */
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;
+  text-align:left;
+}
+
+/* ITEM */
+.why-item{
+  padding:30px;
+  border-left:5px solid var(--accent);
+  background:var(--light);
+  transition:0.35s ease;
+}
+
+.why-item h3{
+  font-size:18px;
+  margin-bottom:15px;
+  color:var(--dark);
+}
+
+.why-item p{
+  font-size:15px;
+  line-height:1.7;
+  color:#333;
+}
+
+.why-item:hover{
+  transform:translateY(-6px);
+}
+
+/* IMPACT SECTION */
+.why-impact{
+  margin-top:100px;
+}
+
+.why-impact p{
+  font-size:18px;
+  max-width:900px;
+  margin:40px auto;
+  line-height:1.8;
+  color:var(--dark);
+  font-weight:600;
+}
+
+/* LINES */
+.impact-line{
+  width:150px;
+  height:4px;
+  background:var(--accent);
+  margin:0 auto;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .why-company{padding:120px 20px;}
+  .why-title{font-size:32px;}
+  .why-title span{font-size:24px;}
+}
+</style>
+<!-- ===== PREMIUM PROBLEM & SOLUTION ===== -->
+<section id="p&s" class="ps-ultra">
+
+  <div class="ps-wrap">
+
+    <!-- Yellow Label -->
+    <div class="ps-label">
+      STRUCTURAL EDUCATION GAP
+    </div>
+
+    <!-- Main Heading -->
+    <h2 class="ps-main-title">
+      Why Traditional Proof Learning<br>
+      <span>Fails to Scale in Modern Education</span>
+    </h2>
+
+    <!-- Main Divider -->
+    <div class="ps-main-divider"></div>
+
+    <div class="ps-grid">
+
+      <!-- LEFT : PROBLEM -->
+      <div class="ps-left">
+        <h3 class="ps-sub-title">The Underlying Problem</h3>
+        <div class="ps-sub-divider"></div>
+
+        <p>
+          Abstract mathematics relies heavily on symbolic reasoning.
+          However, traditional classroom methods treat proofs as static
+          written exercises rather than interactive cognitive processes.
+        </p>
+
+        <p>
+          Students memorise procedural sequences without internalising
+          structural logic. This creates fragile understanding and
+          performance anxiety in proof-intensive modules.
+        </p>
+
+        <p class="ps-highlight">
+          Institutions struggle with dropout rates, increased tutoring demand,
+          and limited faculty scalability in advanced modules.
+        </p>
+      </div>
+
+      <!-- CENTER LINE -->
+      <div class="ps-center-line"></div>
+
+      <!-- RIGHT : SOLUTION -->
+      <div class="ps-right">
+        <h3 class="ps-sub-title yellow">The TheoremX Solution</h3>
+        <div class="ps-sub-divider"></div>
+
+        <p>
+          TheoremX converts symbolic abstraction into immersive,
+          interactive proof construction inside a spatial environment.
+        </p>
+
+        <p>
+          Each learner action becomes a verified logical step,
+          checked in real time through symbolic computation
+          and adaptive AI assistance.
+        </p>
+
+        <p class="ps-highlight">
+          This transforms proof learning from passive observation
+          into structured, embodied reasoning.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+:root{
+  --dark:#2c2c2c;
+  --white:#ffffff;
+  --accent:#f4a300;
+}
+
+/* SECTION */
+.ps-ultra{
+  background:var(--dark);
+  color:var(--white);
+  padding:200px 8%;
+  position:relative;
+  overflow:hidden;
+}
+
+/* Soft Background Accent */
+.ps-ultra::before{
+  content:"";
+  position:absolute;
+  top:-200px;
+  right:-200px;
+  width:600px;
+  height:600px;
+  background:radial-gradient(circle, rgba(244,163,0,0.08), transparent 70%);
+}
+
+/* WRAP */
+.ps-wrap{
+  max-width:1200px;
+  margin:auto;
+  position:relative;
+  z-index:2;
+}
+
+/* TOP YELLOW LABEL */
+.ps-label{
+  text-align:center;
+  font-size:13px;
+  letter-spacing:0.4em;
+  color:var(--accent);
+  margin-bottom:25px;
+  font-weight:700;
+}
+
+/* MAIN TITLE */
+.ps-main-title{
+  text-align:center;
+  font-size:48px;
+  font-weight:900;
+  line-height:1.2;
+}
+
+.ps-main-title span{
+  color:var(--accent);
+}
+
+/* MAIN DIVIDER */
+.ps-main-divider{
+  width:160px;
+  height:4px;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    var(--accent),
+    transparent
+  );
+  margin:40px auto 120px;
+}
+
+/* GRID */
+.ps-grid{
+  display:grid;
+  grid-template-columns:1fr 2px 1fr;
+  gap:80px;
+}
+
+/* CENTER LINE */
+.ps-center-line{
+  background:linear-gradient(
+    to bottom,
+    transparent,
+    var(--accent),
+    transparent
+  );
+}
+
+/* SUB TITLE */
+.ps-sub-title{
+  font-size:26px;
+  margin-bottom:15px;
+}
+
+.ps-sub-title.yellow{
+  color:var(--accent);
+}
+
+/* SUB DIVIDER */
+.ps-sub-divider{
+  width:80px;
+  height:3px;
+  background:var(--white);
+  opacity:0.6;
+  margin-bottom:30px;
+}
+
+/* PARAGRAPHS */
+.ps-left p,
+.ps-right p{
+  font-size:17px;
+  line-height:1.8;
+  margin-bottom:25px;
+  color:#e4e4e4;
+}
+
+/* HIGHLIGHT TEXT */
+.ps-highlight{
+  color:var(--accent);
+  font-weight:600;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .ps-ultra{padding:140px 20px;}
+  .ps-main-title{font-size:32px;}
+  .ps-grid{
+    grid-template-columns:1fr;
+    gap:80px;
+  }
+  .ps-center-line{display:none;}
+}
+</style>
+<!-- ===== ADVANCED FAQ SECTION ===== -->
+<section id="faq" class="faq-premium-advanced">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+<div class="faq-title-divider">
+  <span></span>
+</div>
+
+    <!-- FAQ ITEM -->
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        What is TheoremX?
+        <span>∑</span>
+      </div>
+      <div class="faq-answer">
+        TheoremX is an immersive digital identity and academic infrastructure
+        platform designed for regulated education environments.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        Is the system regulatory compliant?
+        <span>π</span>
+      </div>
+      <div class="faq-answer">
+        Yes. The architecture aligns with compliance frameworks and
+        structured verification protocols required by institutions.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        Who can implement TheoremX?
+        <span>Δ</span>
+      </div>
+      <div class="faq-answer">
+        Universities, workforce organisations, innovation hubs,
+        and regulated academic environments.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        Does it support scalable infrastructure?
+        <span>∞</span>
+      </div>
+      <div class="faq-answer">
+        Yes. TheoremX is built on modular architecture enabling
+        long-term scalability and structured expansion.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        How secure is the identity framework?
+        <span>√</span>
+      </div>
+      <div class="faq-answer">
+        Security is embedded at architecture level using
+        verification layering and controlled data governance.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        Can institutions integrate existing systems?
+        <span>∫</span>
+      </div>
+      <div class="faq-answer">
+        Yes. The platform supports integration layers that allow
+        alignment with existing academic or compliance software.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        What makes TheoremX different?
+        <span>≠</span>
+      </div>
+      <div class="faq-answer">
+        Unlike fragmented systems, TheoremX provides a unified,
+        structured, and portable identity framework.
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+:root{
+  --dark:#2c2c2c;
+  --light:#f5f5f5;
+  --white:#ffffff;
+  --accent:#f4a300;
+  --text:#333333;
+}
+.faq-title-divider{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  margin:40px 0 80px;
+}
+
+.faq-title-divider span{
+  width:140px;
+  height:4px;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    #f4a300,
+    transparent
+  );
+}
+/* ===== FAQ SECTION ===== */
+
+.faq-premium-advanced{
+  background:var(--light);
+  padding:170px 8%;
+  position:relative;
+}
+
+.faq-container{
+  max-width:900px;
+  margin:auto;
+}
+
+.faq-title{
+  text-align:center;
+  font-size:44px;
+  margin-bottom:80px;
+  color:var(--dark);
+  letter-spacing:1px;
+}
+
+/* FAQ ITEM */
+.faq-item{
+  margin-bottom:35px;
+  padding-bottom:20px;
+  border-bottom:1px solid var(--accent);
+  transition:0.3s ease;
+}
+
+/* QUESTION */
+.faq-question{
+  font-size:18px;
+  font-weight:700;
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:var(--dark);
+  transition:0.3s ease;
+}
+
+.faq-question span{
+  font-size:20px;
+  font-weight:800;
+  color:var(--accent);
+  transition:0.3s ease;
+}
+
+.faq-question:hover{
+  color:var(--accent);
+}
+
+/* ANSWER */
+.faq-answer{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height 0.4s ease;
+  font-size:15px;
+  line-height:1.7;
+  color:var(--text);
+  margin-top:10px;
+}
+
+/* ACTIVE */
+.faq-item.active .faq-answer{
+  max-height:200px;
+}
+
+.faq-item.active .faq-question span{
+  transform:scale(1.2);
+}
+
+/* Subtle Accent Bar */
+.faq-item::after{
+  content:"";
+  display:block;
+  width:40px;
+  height:3px;
+  background:var(--accent);
+  margin-top:15px;
+  opacity:0.5;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .faq-premium-advanced{
+    padding:120px 20px;
+  }
+  .faq-title{
+    font-size:30px;
+  }
+}
+</style>
+
+<script>
+function toggleFaq(element){
+  const item = element.parentElement;
+  item.classList.toggle("active");
+}
+</script>
+<!-- ===== PREMIUM CONTACT SECTION ===== -->
+<section class="contact-ultra">
+
+  <div class="contact-container">
+
+    <!-- Top Accent Frame -->
+    <div class="contact-frame-top"></div>
+
+    <span class="contact-mini">EXECUTIVE ENQUIRY</span>
+
+    <h2 class="contact-title">
+      Start a Strategic Conversation<br>
+      With TheoremX Leadership
+    </h2>
+
+    <p class="contact-desc">
+      TheoremX is committed to building secure, scalable digital identity
+      infrastructure for modern regulated industries. We collaborate with
+      forward-thinking institutions, technology partners, and investors
+      who value structured innovation and long-term operational impact.
+    </p>
+
+    <p class="contact-desc">
+      If you are exploring implementation partnerships, advisory engagement,
+      or enterprise-level deployment, our team is prepared to provide
+      clarity, documentation, and structured next steps.
+    </p>
+
+    <!-- Elegant Inline Strength Band -->
+<div class="contact-band">
+
+  <div class="band-line"></div>
+
+  <div class="band-items">
+    <span>Enterprise Ready</span>
+    <span class="divider-dot"></span>
+    <span>Compliance Secure</span>
+    <span class="divider-dot"></span>
+    <span>Scalable Infrastructure</span>
+  </div>
+
+  <div class="band-line"></div>
+
+</div>
+</div>
+    <!-- CTA Button -->
+    <button class="contact-btn" onclick="openMail()">
+      Schedule Executive Discussion
+    </button>
+
+    <!-- Bottom Accent Frame -->
+    <div class="contact-frame-bottom"></div>
+
+  </div>
+
+</section>
+
+<style>
+   /* ===== ELEGANT SIGNATURE BAND ===== */
+
+.contact-band{
+  margin:60px 0 80px;
+  text-align:center;
+}
+
+/* Thin horizontal lines */
+.band-line{
+  height:2px;
+  background:#2c2c2c;
+  width:100px;
+  margin:20px auto;
+}
+
+/* Inline text */
+.band-items{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:18px;
+  flex-wrap:wrap;
+  font-weight:700;
+  font-size:14px;
+  color:#2c2c2c;
+  letter-spacing:0.08em;
+}
+
+/* Small dot divider */
+.divider-dot{
+  width:6px;
+  height:6px;
+  background:#ffffff;
+  border-radius:50%;
+}
+
+/* Subtle hover elegance */
+.band-items span{
+  transition:0.3s ease;
+}
+
+.band-items span:hover{
+  color:#ffffff;
+}
+/* SECTION */
+.contact-ultra{
+  background:var(--accent);
+  padding:180px 8%;
+  position:relative;
+  overflow:hidden;
+  text-align:center;
+}
+
+
+/* Top & Bottom Frame Lines */
+.contact-frame-top,
+.contact-frame-bottom{
+  height:4px;
+  background:var(--dark);
+  width:120px;
+  margin:0 auto 40px;
+}
+
+.contact-frame-bottom{
+  margin-top:60px;
+}
+
+/* Mini Label */
+.contact-mini{
+  font-size:12px;
+  letter-spacing:0.4em;
+  color:var(--dark);
+  font-weight:700;
+}
+
+/* Title */
+.contact-title{
+  font-size:52px;
+  font-weight:900;
+  color:var(--white);
+  margin:25px 0 30px;
+  line-height:1.15;
+}
+
+/* Paragraph */
+.contact-desc{
+  font-size:18px;
+  line-height:1.8;
+  color:var(--dark);
+  margin-bottom:30px;
+}
+
+/* Highlight Points */
+.contact-points{
+  margin:40px 0 60px;
+  display:grid;
+  gap:14px;
+  font-weight:600;
+  color:var(--dark);
+  font-size:16px;
+}
+
+/* Button */
+.contact-btn{
+  background:var(--dark);
+  color:var(--white);
+  padding:20px 70px;
+  border:none;
+  font-size:16px;
+  font-weight:800;
+  border-radius:60px 10px 60px 10px;
+  cursor:pointer;
+  transition:0.35s ease;
+  box-shadow:0 25px 60px rgba(0,0,0,0.25);
+}
+
+.contact-btn:hover{
+  transform:translateY(-6px);
+  background:#1f1f1f;
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .contact-title{ font-size:34px; }
+  .contact-desc{ font-size:16px; }
+  .contact-ultra{ padding:140px 20px; }
+}
+</style>
+
+<script>
+function openMail(){
+  window.location.href =
+  "mailto:yourmail@example.com" +
+  "?subject=Executive%20Discussion%20-%20TheoremX" +
+  "&body=Hello%20TheoremX%20Leadership%20Team,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20strategic%20collaboration%20regarding%20your%20digital%20identity%20infrastructure.%0D%0A%0D%0AOrganisation:%0D%0APosition:%0D%0AContact%20Number:%0D%0AProject%20Scope:%0D%0A%0D%0ALooking%20forward%20to%20your%20response.%0D%0A%0D%0ARegards,";
+}
+</script>
+<!-- ===== PREMIUM FOOTER ===== -->
+ 
+<footer class="footer-premium">
+
+  <div class="footer-container">
+
+    <!-- Brand Section -->
+    <div class="footer-brand">
+      <h3>TheoremX</h3>
+      <p>
+        Immersive academic infrastructure built for scalable,
+        compliant, and innovation-driven institutions.
+      </p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Solutions</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- Strategic Vision -->
+<div class="footer-contact">
+  <h4>Strategic Vision</h4>
+  <p>Building Scalable Academic Infrastructure</p>
+  <p>Advancing Immersive Learning Systems</p>
+</div>
+  </div>
+
+  <!-- Divider -->
+  <div class="footer-divider"></div>
+
+  <!-- Bottom Line -->
+  <div class="footer-bottom">
+    © 2026 TheoremX · All Rights Reserved
+  </div>
+
+</footer>
+
+<style>
+:root{
+  --dark:#2c2c2c;
+  --light:#f5f5f5;
+  --white:#ffffff;
+  --accent:#f4a300;
+  --text:#333333;
+}
+
+/* ===== FOOTER ===== */
+
+.footer-premium{
+  background:var(--dark);
+  color:var(--white);
+  padding:100px 8% 40px;
+}
+
+/* Layout */
+.footer-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:60px;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* Brand */
+.footer-brand h3{
+  font-size:26px;
+  color:var(--accent);
+  margin-bottom:15px;
+}
+
+.footer-brand p{
+  font-size:15px;
+  line-height:1.6;
+  color:var(--light);
+}
+
+/* Links */
+.footer-links h4,
+.footer-contact h4{
+  font-size:16px;
+  margin-bottom:18px;
+  color:var(--accent);
+}
+
+.footer-links a{
+  display:block;
+  text-decoration:none;
+  color:var(--white);
+  margin-bottom:10px;
+  font-size:14px;
+  transition:0.3s ease;
+}
+
+.footer-links a:hover{
+  color:var(--accent);
+}
+
+/* Contact */
+.footer-contact p{
+  font-size:14px;
+  margin-bottom:8px;
+  color:var(--light);
+}
+
+/* Divider */
+.footer-divider{
+  height:2px;
+  background:var(--accent);
+  width:100%;
+  margin:60px 0 25px;
+  opacity:0.6;
+}
+
+/* Bottom */
+.footer-bottom{
+  text-align:center;
+  font-size:13px;
+  color:var(--light);
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .footer-premium{
+    padding:70px 20px 30px;
+  }
+}
+</style>
+</body>
+</html>
